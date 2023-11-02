@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login Page</title>
+
+    <style></style>
+  </head>
+  <body class="relative">
+    <header class="w-full bg-[#35155D] py-7 fixed top-0 left-0">
+      <nav class="w-4/5 mx-auto flex justify-between items-center">
+        <div>
+          <img src="/images/logo.svg" alt="image of edugrade logo" />
+        </div>
+        <div class="flex justify-center items-center gap-4">
+          <div
+            class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
+          >
+            <i class="fa fa-facebook text-xl" aria-hidden="true"></i>
+          </div>
+          <div
+            class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
+          >
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div
+            class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div
+            class="bg-white w-7 h-7 rounded-full flex justify-center items-center"
+          >
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-full relative bg h-[100vh] bg-[#35155D]/5">
+      <div class="fixed top-0 left-0 -z-[1000]">
+        <img src="/images/top-circle.png" alt="img of a cirlce" />
+      </div>
+      <div class="fixed bottom-0 right-0 -z-[1000]">
+        <img src="/images/bottom-circle.png" alt="img of a cirlce" />
+      </div>
+      <div class="fixed top-[15%] left-[20%] -z-[1000]">
+        <img
+          src="/images/circle group.png"
+          class="w-4/5 h-4/5"
+          alt="img of a cirlce"
+        />
+      </div>
+      <div class="fixed top-[35%] right-[30%] -z-[1000]">
+        <img
+          src="/images/form-bg.png"
+          class="w-2/3 h-2/3"
+          alt="img of a cirlce"
+        />
+      </div>
+      <div class="fixed top-[15%] right-[5%] -z-[1000]">
+        <div class="w-32 h-32 rounded-full bg-[#9F0D7F]"></div>
+      </div>
+      <div class="fixed bottom-[20%] left-[15%] -z-[1000]">
+        <div class="w-32 h-32 rounded-full bg-[#9F0D7F]"></div>
+      </div>
+      <div class="fixed bottom-[0%] left-[10%] -z-[1000]">
+        <img src="/images/student.svg" class='w-[30em] h-[30em]' alt="image of a girl holding books" />
+      </div>
+      <div
+        class="absolute right-[100px] top-[20%] rounded-lg login-form w-[32em] bg-white text-[#35155D] drop-shadow-md py-6 px-6"
+      >
+        <h1 class="text-[#35155D] font-semibold w-full text-2xl text-center">
+          Welcome To Our Portal!
+        </h1>
+        <p class="my-3 text-xl">Login to your account</p>
+
+        <form class="w-full relative">
+          <div class="w-full mb-4">
+            <label for="email" class="text-shadow">Email</label> <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              class="box-shadow-md px-2 mt-2 rounded-lg py-3 border-2 w-full border-[#35155D] focus:outline-none focus:border-[#35155D] focus:bg-[#35155D]/5"
+            />
+          </div>
+          <div class="w-full mb-3">
+            <label for="password">Password</label> <br />
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              class="px-2 mt-2 rounded-lg py-3 border-2 border-[#35155D] w-full focus:outline-none focus:border-[#35155D] focus:bg-[#35155D]/5"
+            />
+          </div>
+          <a href="#" class="italic font-light text-sm text-[#AD7DE9]"
+            >Forgotten password</a
+          >
+
+          <div class='relative'>
+          <button
+            type="submit"
+            class="bg-[#35155D] overflow-hidden text-white font-semibold text-lg relative w-[60%] mx-auto py-3 px-2 block border boder-[#35155d] rounded-full mt-6 transition-all hover:scale-110"
+          >
+            <div class="absolute -bottom-[15px] left-0 z-[1000]">
+              <div class="w-14 h-14 rounded-full bg-[#F6635C]"></div>
+            </div>
+            <div class="absolute -top-[15px] right-0 z-[1000]">
+              <div class="w-14 h-14 rounded-full bg-[#9F0D7F]"></div>
+            </div>
+            Login
+          </button>
+        </div>
+        </form>
+      </div>
+    </main>
+
+    <footer
+      class="fixed bottom-0 left-0 w-full bg-[#35155D] py-5 flex flex-col gap-2 justify-center items-center"
+    >
+      <div class="flex justify-center text-sm items-center text-white font-semibold">
+        <a href="#">Facebook |</a>
+        <a href="#">Linkedin | </a>
+        <a href="#">Twitter | </a>
+        <a href="#">Instagram | </a>
+        <a href="#">Privacy Policy |</a>
+        <a href="#"> Terms and Conditions</a>
+      </div>
+      <div class="text-white font-semibold text-sm">
+        <a href="#"> Copyright @ Edugrade. All rights reserved </a>
+      </div>
+    </footer>
+  </body>
+</html>
